@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://kit.fontawesome.com/baea819442.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <title>IT HOST</title>
+</head>
+<body>
+    <div class="bgimg">
+        <div class="nav1">
+            <div class="logo">
+                <img src="logo.png.webp" alt="Logo">
+            </div>
+            <div class="topnav1" id="myTopnav">
+                    <a class="menubtn1" href="#" onclick="navigateToHome()">Home</a>
+                    <a class="menubtn1" href="#" onclick="navigateToAbout()">About us</a>
+                    <a class="menubtn1" href="#" onclick="navigateToServices()">Services</a>
+                    <a class="menubtn1" href="https://www.thedailystar.net/todays-news">News</a>
+                    <a class="menubtn1" href="#">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+            </div>
+        </div>
+        <h1 style="width: 200px;">Contact</h1>
+    </div>
+
+    <div class="info">
+        <h2 style="position: relative;left: 20px;margin-bottom: 30px;">Contact Info</h2>
+        <div class="inform">
+            <div class="text">
+                <p>Nullam lacinia ex eleifend orci portt-itor, suscipit interdum augue condi-mentum. Etiam pretium turpis eget nibh laoreet iaculis. Vivamus auctor mi eget odio feugiat.</p>
+                <div class="number">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p style="display: inline;">basundharaa</p>
+                </div>
+                <div class="number">
+                    <i class="fa-solid fa-phone"></i>
+                    <p style="display: inline;">+880 1874398837</p>
+                </div>
+                <div class="number">
+                    <i class="fa-regular fa-envelope"></i>
+                    <p style="display: inline;">alvee196@gmail.com</p>
+                </div>
+            </div>
+            <div class="input">
+                <div class="input1">
+                    <div class="input1_1">
+                        <input type="text" placeholder="Your name">
+                    </div>
+                    <div class="input1_1">
+                        <input type="email" placeholder="Your e-mail">
+                    </div>
+                </div>
+                <div class="input2">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="input3">
+                    <textarea name="Message" placeholder="Message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="button" class="button" href="#">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="section6">
+        <div class="box1">
+            <img src="logo.png.webp" alt="">
+            <p>Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum.Proin gravida nibh vel velit auctor aliquet, aenean sollicitudin lorem quis bibendum auctor, nisi elit consequat ipsum</p>
+            <div class="link">
+                <div class="icon">
+                    <a href="https://www.facebook.com/Alveesarker01" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.instagram.com/im__alvee/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="icon">
+                    <a href="https://github.com/alveesarker" target="_blank"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <h3>Usefull Links</h3>
+            <a href="#">Web Hosting</a>
+            <a href="#">WordPress Hosting</a>
+            <a href="#">VPS Hosting</a>
+            <a href="#">Cloud Server</a>
+            <a href="#">Reseller Package</a>
+            <a href="#">Dedicated Hosting</a>
+        </div>
+        <div class="box3">
+            <h3>Latest Posts</h3>
+            <div class="boximg">
+                <img src="1.jpg.webp" alt="">
+                <p>Web Hosting for everyone</p>
+            </div>
+            <div class="boximg">
+                <img src="2.jpg.webp" alt="">
+                <p>Web Hosting for everyone</p>
+            </div>
+            <div class="boximg">
+                <img src="3.jpg.webp" alt="">
+                <p>Web Hosting for everyone</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <p>Copyright ©2023 All rights reserved by <a href="https://www.facebook.com/Alveesarker01" target="_blank">Alvee Sarker</a></p>
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav1") {
+              x.className += " responsive";
+            } else {
+              x.className = "topnav1";
+            } 
+        }
+
+        function navigateToHome() {
+            window.location.href = 'index.html';
+        }
+        function navigateToAbout() {
+            window.location.href = 'index1.html';
+        }
+        function navigateToServices() {
+            window.location.href = 'index2.html';
+        }
+
+        function initMap() {
+            var myLatLng = {lat: -34.397, lng: 150.644};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                zoom: 8
+            });
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Hello World!'
+            });
+        }
+    </script>
+</body>
+</html>
