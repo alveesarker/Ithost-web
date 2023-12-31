@@ -267,12 +267,12 @@
     height: 200px;
     width: 500px;
     padding: 20px;
-    background: linear-gradient(to right, #3498db, #9b59b6);
+    background-color: rgb(230, 245, 255);
     border-radius: 20px;
     overflow: auto;
 }
 .section3 .mySlides .text p{
-    color: rgb(255, 255, 255);
+    color: rgb(62, 62, 62);
     font-size: 16px;
     line-height: 25px;
     font-family: sans-serif;
@@ -766,7 +766,7 @@ span{
 @media(max-width:640px){
     .section3 .line{
         height: 8px;
-        width: 295px;
+        width: 310px;
     }
     .section3 .pbar p{
         font-size: 12px;
@@ -778,7 +778,7 @@ span{
     }
     .section3 .mySlides .text{
         height: 170px;
-        width: 295px;
+        width: 310px;
     }
     .section3 .mySlides .text p{
         font-size: 12px;
