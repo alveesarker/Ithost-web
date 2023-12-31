@@ -16,10 +16,10 @@
                 <img src="logo.png.webp" alt="Logo">
             </div>
             <div class="topnav1" id="myTopnav">
-                    <a class="menubtn1" href="#" onclick="navigateToHome()">Home</a>
+                   <a class="menubtn1" href="#" onclick="navigateToHome()">Home</a>
                     <a class="menubtn1" href="#" onclick="navigateToAbout()">About us</a>
                     <a class="menubtn1" href="#">Services</a>
-                    <a class="menubtn1" href="https://www.thedailystar.net/todays-news">News</a>
+                    <a class="menubtn1" href="#" onclick="navigateToNews()">News</a>
                     <a class="menubtn1" href="#" onclick="navigateToContact()">Contact</a>
                     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                         <i class="fa fa-bars"></i>
@@ -157,7 +157,7 @@
               x.className = "topnav1";
             } 
         }
-        function navigateToHome() {
+         function navigateToHome() {
             window.location.href = 'index.html';
         }
         function navigateToAbout() {
@@ -165,6 +165,9 @@
         }
         function navigateToContact() {
             window.location.href = 'index3.html';
+        }
+        function navigateToNews() {
+            window.location.href = 'index4.html';
         }
     </script>
 </body>
