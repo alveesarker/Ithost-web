@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    box-sizing: border-box;
+}
+.bgimg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 450px;
+    background-image: url(bg.jpg.webp);
+    background-size:cover
+}
+.bgimg h1{
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: 150px;
+    left: 90px;
+}
+
+.nav1 {
+    height: 100px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+    align-items: center;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.topnav1 {
+    overflow: hidden;
+  }
+  
+  .topnav1 a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav1 a:hover {
+    color:#eb2b63;
+  }
+  
+  
+  .topnav1 .icon {
+    display: none;
+  }
+  
+.menubtn1:hover{
+    color: #eb2b63;
+    transition: all ease 0.2s;
+}
+.sdek{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    top: 100px;
+    justify-content: center;
+}
+.sdek h1{
+    font-size: 300px;
+    position: relative;
+    display: inline;
+    text-align: center;
+    color: #200545;
+}
+
+.section6{
+    height: auto;
+    width: 100%;
+    background-color: #200545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-top: 200px;
+}
+.section6 .box1 {
+    height: auto;
+    width: 350px;
+    margin: 70px;
+}
+.section6 .box1 p{
+    font-size: 14px;
+    color: rgba(173, 157, 255, 0.414);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 26px;
+}
+.section6 .box1 .link {
+    display: flex;
+}
+.section6 .box1 .link .icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #491f70;
+    margin-right: 20px;
+}
+.section6 .box1 .link .icon i{
+    font-size: 13px;
+    color: white;
+}
+
+.section6 .box1 .link .icon:hover{
+    background-color: #eb2b63;
+    transition: all ease 0.3s;
+}
+
+.section6 .box2{
+    height: auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+    
+}
+.section6 .box2 h3{
+    color: white;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.section6 .box2 a{
+    text-decoration: none;
+    color: rgba(173, 157, 255, 0.414);
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.section6 .box3 {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 70px;
+}
+.section6 .box3 h3{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+.section6 .box3 .boximg{
+    display: flex;
+    margin-bottom: 30px;
+}
+.section6 .box3 .boximg img{
+    height: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.section6 .box3 .boximg p{
+    color: #eb2b61c3;
+    font-size: 13px;
+}
+
+.foot {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b043b;
+}
+.foot p{
+    font-size: 14px;
+    color: #8e7ea5;
+}
+.foot a{
+    text-decoration: none;
+}
+
+
+@media(max-width:1151px){
+    .section6{
+        justify-content: left;
+    }
+}
+@media(max-width:1065px) {
+    .bgimg {
+        height: 350px;
+        background-image: url(bg.jpg.webp);
+        background-size:cover
+    }
+    .bgimg h1{
+        font-size: 30px;
+        top: 150px;
+        left: 60px;
+  }
+}
+
+@media(max-width:900px){
+    .sdek h1{
+        font-size: 200px;
+    }
+}
+
+
+@media(max-width:768px) {
+    .topnav1 a{
+        display: none;
+        z-index: 1;
+    }
+    .topnav1 a.icon {
+      float: right;
+      display: block;
+      z-index: 1;
+    }
+    .topnav1.responsive {
+        position: relative;
+        top: 100px;
+        height: auto;
+        width: 300px;
+        background-color: #242424;
+    }
+    .topnav1 a:hover {
+        background-color:rgb(53, 53, 53) ;
+        color: white;
+    }
+    .topnav1.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: -4px;
+    }
+    .topnav1.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .bgimg {
+        height: 300px;
+    }
+    .bgimg h1{
+        top: 100px;
+        left: 40px;
+    }
+    .section6 .box1 {
+        margin: 30px;
+    }
+    .section6 .box2 {
+        margin: 30px;
+    }
+    .section6 .box3 {
+        margin: 30px;
+    }
+    .sdek h1{
+        font-size: 100px;
+    }
+}
