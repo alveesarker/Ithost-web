@@ -59,12 +59,14 @@
                     <input type="text" placeholder="Subject">
                 </div>
                 <div class="input3">
-                    <textarea name="Message" placeholder="Message" cols="30" rows="10"></textarea>
+                    <textarea name="Message" id="msg" placeholder="Message" cols="30" rows="10"></textarea>
                 </div>
-                <button type="button" class="button" href="#">Submit</button>
+                <button type="button" onclick= "laga()" class="button" href="#">Submit</button>
             </div>
         </div>
     </div>
+
+    <p id="demo"></p>
 
     <div id="map"></div>
 
@@ -152,6 +154,10 @@
                 map: map,
                 title: 'Hello World!'
             });
+        }
+        function laga() {
+          let x = document.getElementById("msg").value;
+          document.getElementById("demo").innerHTML = x;
         }
     </script>
 </body>
